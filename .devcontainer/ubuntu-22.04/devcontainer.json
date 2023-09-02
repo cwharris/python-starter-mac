@@ -1,0 +1,26 @@
+{
+    "name": "Ubuntu 22.04",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "args": {
+            "BASE": "rapidsai/devcontainers:23.10-cpp-mambaforge-ubuntu22.04",
+            "PYTHON_PACKAGE_MANAGER": "conda"
+        }
+    },
+    "containerEnv": {
+        "DEFAULT_CONDA_ENV": "starter"
+    },
+    "initializeCommand": "mkdir -p ${localWorkspaceFolder}/.cache/conda/envs ${localWorkspaceFolder}/../.conda/pkgs",
+    "mounts": [
+        {
+            "type": "bind",
+            "source": "${localWorkspaceFolder}/.cache/conda/envs",
+            "target": "/home/coder/.conda/envs"
+        },
+        {
+            "type": "bind",
+            "source": "${localWorkspaceFolder}/../.conda/pkgs",
+            "target": "/home/coder/.conda/pkgs"
+        }
+    ]
+}
