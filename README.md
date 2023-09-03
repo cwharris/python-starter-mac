@@ -58,12 +58,12 @@ Fork and Clone This Repository
 ```
 mkdir -p ~/dev/<github username>
 cd ~/dev/<github username>
-gh repo fork cwharris/python-starter
-gh repo clone <github username>/python-starter
+gh repo fork cwharris/python-starter-mac
+gh repo clone <github username>/python-starter-mac
 ```
 Launch VS Code Devcontainer
 -
 ```
-code ~/dev/<github username>/python-starter
+code ~/dev/<github username>/python-starter-mac
 ```
 Click the big blue button at the bottom right of the screen.
