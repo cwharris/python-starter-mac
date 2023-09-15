@@ -11,6 +11,12 @@
         "DEFAULT_CONDA_ENV": "starter"
     },
     "initializeCommand": "mkdir -p ${localWorkspaceFolder}/.cache/conda/envs ${localWorkspaceFolder}/../.conda/pkgs",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    },
+    "overrideFeatureInstallOrder": [
+        "ghcr.io/devcontainers/features/docker-outside-of-docker"
+    ],
     "mounts": [
         {
             "type": "bind",

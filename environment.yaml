@@ -1,0 +1,7 @@
+name: starter
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - pandas
+  - jupyter
